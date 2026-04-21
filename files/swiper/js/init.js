@@ -74,11 +74,8 @@ if (directionsSlider) {
 /* <- Directions */
 
 /* Top products -> */
-
 let swiperInstances = []; // Array to store all Swiper instances
-
-// Function for initializing sliders
-function initSliders() {
+function initSliders() { // Function for initializing sliders
    const sliders = document.querySelectorAll('.top-products-slider');
 
    sliders.forEach(slider => {
@@ -173,7 +170,6 @@ window.addEventListener('resize', toggleSliders);
 
 // Track screen orientation changes
 window.addEventListener('orientationchange', toggleSliders);
-
 /* <- Top products */
 
 /* What think Agro Took -> */
