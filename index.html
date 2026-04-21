@@ -6,14 +6,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260421020502" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260421020502" rel="stylesheet">
-   <link rel="stylesheet" href="css/style.min.css?_v=20260421020502">
+   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Syne:wght@400..800&display=swap&_v=20260421151312" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap&_v=20260421151312" rel="stylesheet">
+   <link rel="stylesheet" href="css/style.min.css?_v=20260421151312">
    <!--<link rel="icon" type="image/svg+xml" href="favicon.svg">-->
-   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260421020502">
-   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260421020502">
-   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260421020502">
-   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260421020502">
+   <link rel="stylesheet" href="files/swiper/css/swiper-bundle.min.css?_v=20260421151312">
+   <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260421151312">
+   <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260421151312">
+   <link rel="stylesheet" href="files/custom-select/style.css?_v=20260421151312">
    <title>Головна - My Gin</title>
 </head>
 
@@ -429,175 +429,279 @@
 					<div class="top-products-slider">
 						<div class="top-products__items">
 							<div class="top-products__item">
-								<div class="top-products__item-wrap-image">
-									<a href="#">
-										<img loading="lazy" src="images/top-products-image-1.jpg" alt="">
-										<div class="swiper-lazy-preloader"></div>
-									</a>
-									<button type="button" class="top-products__favorites-btn to-favorites">
-										<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
-										</svg>
-									</button>
+								<div class="product-card__block">
+									<div class="product-card__block-author">
+										<div class="product-card__block-author-blockPhoto">
+											<img src="images/product-card-block-author-photo.png" alt="Віктор Семенович">
+										</div>
+										<div class="product-card__block-author-info">
+											<h3 class="product-card__block-author-name">Віктор Семенович</h3>
+											<p class="product-card__block-author-position">Сантехнік, Електрик</p>
+										</div>
+										<button type="button" class="product-card__block-icon-favorites added-to-favorites"><!-- added-to-favorites -->
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.6348 0.423828C13.7665 0.423828 14.6949 0.793662 15.4482 1.5293C16.2006 2.26401 16.5762 3.16838 16.5762 4.27148C16.5762 4.84294 16.4714 5.41269 16.2568 5.98242H16.2559C16.0442 6.54486 15.6631 7.1948 15.0947 7.93359C14.5272 8.67138 13.7555 9.52435 12.7744 10.4932C11.7925 11.4628 10.5422 12.6222 9.02246 13.9727L8.5 14.4346L7.97754 13.9727C6.46002 12.6224 5.21051 11.4628 4.22754 10.4932C3.24557 9.52436 2.47278 8.67131 1.90527 7.93359C1.33692 7.1948 0.95581 6.54486 0.744141 5.98242H0.743164C0.528644 5.41269 0.423828 4.84294 0.423828 4.27148C0.423842 3.16838 0.799434 2.26401 1.55176 1.5293C2.30506 0.793662 3.23352 0.423828 4.36523 0.423828C5.10929 0.423905 5.79887 0.60208 6.44141 0.958984C7.08562 1.31672 7.65835 1.83837 8.15527 2.53711L8.49121 3.01074L8.83887 2.5459C9.3833 1.81921 9.97303 1.2905 10.6035 0.943359C11.2336 0.596695 11.9085 0.423905 12.6348 0.423828Z" stroke="#12144A" stroke-width="0.846841"/>
+											</svg>
+										</button>
+									</div>
+									<div class="product-card__block-raiting-and-price">
+										<div class="product-card__block-raiting">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-no-active.svg" alt="star">
+										</div>
+										<p class="product-card__block-price">1 000 ₴</p>
+									</div>
+									<div class="product-card__block-tags">
+										<a href="#" class="product-card__block-tag">ТОП</a>
+										<a href="#" class="product-card__block-tag">2.9 км</a>
+										<a href="#" class="product-card__block-tag">Перевірений</a>
+										<a href="#" class="product-card__block-tag">+1</a>
+									</div>
 								</div>
-								<table class="top-products__item-content">
-									<thead>
-										<tr>
-											<th>Madrid</th>
-											<th>Yesterday 07:30</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Fresh and flavorful tomatoes</td>
-											<td><sub>$</sub>42.99 <span>1 tone</span></td>
-										</tr>
-									</tbody>
-								</table>
-								<a href="#" class="top-products__item-bottom">Buy now</a>
 							</div>
 							<div class="top-products__item">
-								<div class="top-products__item-wrap-image">
-									<a href="#">
-										<img loading="lazy" src="images/top-products-image-2.jpg" alt="">
-										<div class="swiper-lazy-preloader"></div>
-									</a>
-									<button type="button" class="top-products__favorites-btn">
-										<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
-										</svg>
-									</button>
+								<div class="product-card__block">
+									<div class="product-card__block-author">
+										<div class="product-card__block-author-blockPhoto">
+											<img src="images/product-card-block-author-photo.png" alt="Віктор Семенович">
+										</div>
+										<div class="product-card__block-author-info">
+											<h3 class="product-card__block-author-name">Віктор Семенович</h3>
+											<p class="product-card__block-author-position">Сантехнік, Електрик</p>
+										</div>
+										<button type="button" class="product-card__block-icon-favorites "><!-- added-to-favorites -->
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.6348 0.423828C13.7665 0.423828 14.6949 0.793662 15.4482 1.5293C16.2006 2.26401 16.5762 3.16838 16.5762 4.27148C16.5762 4.84294 16.4714 5.41269 16.2568 5.98242H16.2559C16.0442 6.54486 15.6631 7.1948 15.0947 7.93359C14.5272 8.67138 13.7555 9.52435 12.7744 10.4932C11.7925 11.4628 10.5422 12.6222 9.02246 13.9727L8.5 14.4346L7.97754 13.9727C6.46002 12.6224 5.21051 11.4628 4.22754 10.4932C3.24557 9.52436 2.47278 8.67131 1.90527 7.93359C1.33692 7.1948 0.95581 6.54486 0.744141 5.98242H0.743164C0.528644 5.41269 0.423828 4.84294 0.423828 4.27148C0.423842 3.16838 0.799434 2.26401 1.55176 1.5293C2.30506 0.793662 3.23352 0.423828 4.36523 0.423828C5.10929 0.423905 5.79887 0.60208 6.44141 0.958984C7.08562 1.31672 7.65835 1.83837 8.15527 2.53711L8.49121 3.01074L8.83887 2.5459C9.3833 1.81921 9.97303 1.2905 10.6035 0.943359C11.2336 0.596695 11.9085 0.423905 12.6348 0.423828Z" stroke="#12144A" stroke-width="0.846841"/>
+											</svg>
+										</button>
+									</div>
+									<div class="product-card__block-raiting-and-price">
+										<div class="product-card__block-raiting">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-no-active.svg" alt="star">
+										</div>
+										<p class="product-card__block-price">1 010 ₴</p>
+									</div>
+									<div class="product-card__block-tags">
+										<div class="product-card__block-tag">ТОП</div>
+										<div class="product-card__block-tag">2.9 км</div>
+										<div class="product-card__block-tag">Перевірений</div>
+										<div class="product-card__block-tag">+1</div>
+									</div>
 								</div>
-								<table class="top-products__item-content">
-									<thead>
-										<tr>
-											<th>Madrid</th>
-											<th>Yesterday 07:30</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Watermelon</td>
-											<td><sub>$</sub>300.00 <span>1 tone</span></td>
-										</tr>
-									</tbody>
-								</table>
-								<a href="#" class="top-products__item-bottom">Buy now</a>
 							</div>
 							<div class="top-products__item">
-								<div class="top-products__item-wrap-image">
-									<a href="#">
-										<img loading="lazy" src="images/top-products-image-3.jpg" alt="">
-										<div class="swiper-lazy-preloader"></div>
-									</a>
-									<button type="button" class="top-products__favorites-btn">
-										<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
-										</svg>
-									</button>
+								<div class="product-card__block">
+									<div class="product-card__block-author">
+										<div class="product-card__block-author-blockPhoto">
+											<img src="images/product-card-block-author-photo.png" alt="Віктор Семенович">
+										</div>
+										<div class="product-card__block-author-info">
+											<h3 class="product-card__block-author-name">Віктор Семенович</h3>
+											<p class="product-card__block-author-position">Сантехнік, Електрик</p>
+										</div>
+										<button type="button" class="product-card__block-icon-favorites "><!-- added-to-favorites -->
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.6348 0.423828C13.7665 0.423828 14.6949 0.793662 15.4482 1.5293C16.2006 2.26401 16.5762 3.16838 16.5762 4.27148C16.5762 4.84294 16.4714 5.41269 16.2568 5.98242H16.2559C16.0442 6.54486 15.6631 7.1948 15.0947 7.93359C14.5272 8.67138 13.7555 9.52435 12.7744 10.4932C11.7925 11.4628 10.5422 12.6222 9.02246 13.9727L8.5 14.4346L7.97754 13.9727C6.46002 12.6224 5.21051 11.4628 4.22754 10.4932C3.24557 9.52436 2.47278 8.67131 1.90527 7.93359C1.33692 7.1948 0.95581 6.54486 0.744141 5.98242H0.743164C0.528644 5.41269 0.423828 4.84294 0.423828 4.27148C0.423842 3.16838 0.799434 2.26401 1.55176 1.5293C2.30506 0.793662 3.23352 0.423828 4.36523 0.423828C5.10929 0.423905 5.79887 0.60208 6.44141 0.958984C7.08562 1.31672 7.65835 1.83837 8.15527 2.53711L8.49121 3.01074L8.83887 2.5459C9.3833 1.81921 9.97303 1.2905 10.6035 0.943359C11.2336 0.596695 11.9085 0.423905 12.6348 0.423828Z" stroke="#12144A" stroke-width="0.846841"/>
+											</svg>
+										</button>
+									</div>
+									<div class="product-card__block-raiting-and-price">
+										<div class="product-card__block-raiting">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-no-active.svg" alt="star">
+										</div>
+										<p class="product-card__block-price">1 020 ₴</p>
+									</div>
+									<div class="product-card__block-tags">
+										<div class="product-card__block-tag">ТОП</div>
+										<div class="product-card__block-tag">2.9 км</div>
+										<div class="product-card__block-tag">Перевірений</div>
+										<div class="product-card__block-tag">+1</div>
+									</div>
 								</div>
-								<table class="top-products__item-content">
-									<thead>
-										<tr>
-											<th>Madrid</th>
-											<th>Yesterday 07:30</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Lime</td>
-											<td><sub>$</sub>42.99 <span>1 kg</span></td>
-										</tr>
-									</tbody>
-								</table>
-								<a href="#" class="top-products__item-bottom">Buy now</a>
 							</div>
 							<div class="top-products__item">
-								<div class="top-products__item-wrap-image">
-									<a href="#">
-										<img loading="lazy" src="images/top-products-image-4.jpg" alt="">
-										<div class="swiper-lazy-preloader"></div>
-									</a>
-									<button type="button" class="top-products__favorites-btn">
-										<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
-										</svg>
-									</button>
+								<div class="product-card__block">
+									<div class="product-card__block-author">
+										<div class="product-card__block-author-blockPhoto">
+											<img src="images/product-card-block-author-photo.png" alt="Віктор Семенович">
+										</div>
+										<div class="product-card__block-author-info">
+											<h3 class="product-card__block-author-name">Віктор Семенович</h3>
+											<p class="product-card__block-author-position">Сантехнік, Електрик</p>
+										</div>
+										<button type="button" class="product-card__block-icon-favorites "><!-- added-to-favorites -->
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.6348 0.423828C13.7665 0.423828 14.6949 0.793662 15.4482 1.5293C16.2006 2.26401 16.5762 3.16838 16.5762 4.27148C16.5762 4.84294 16.4714 5.41269 16.2568 5.98242H16.2559C16.0442 6.54486 15.6631 7.1948 15.0947 7.93359C14.5272 8.67138 13.7555 9.52435 12.7744 10.4932C11.7925 11.4628 10.5422 12.6222 9.02246 13.9727L8.5 14.4346L7.97754 13.9727C6.46002 12.6224 5.21051 11.4628 4.22754 10.4932C3.24557 9.52436 2.47278 8.67131 1.90527 7.93359C1.33692 7.1948 0.95581 6.54486 0.744141 5.98242H0.743164C0.528644 5.41269 0.423828 4.84294 0.423828 4.27148C0.423842 3.16838 0.799434 2.26401 1.55176 1.5293C2.30506 0.793662 3.23352 0.423828 4.36523 0.423828C5.10929 0.423905 5.79887 0.60208 6.44141 0.958984C7.08562 1.31672 7.65835 1.83837 8.15527 2.53711L8.49121 3.01074L8.83887 2.5459C9.3833 1.81921 9.97303 1.2905 10.6035 0.943359C11.2336 0.596695 11.9085 0.423905 12.6348 0.423828Z" stroke="#12144A" stroke-width="0.846841"/>
+											</svg>
+										</button>
+									</div>
+									<div class="product-card__block-raiting-and-price">
+										<div class="product-card__block-raiting">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-no-active.svg" alt="star">
+										</div>
+										<p class="product-card__block-price">1 030 ₴</p>
+									</div>
+									<div class="product-card__block-tags">
+										<div class="product-card__block-tag">ТОП</div>
+										<div class="product-card__block-tag">2.9 км</div>
+										<div class="product-card__block-tag">Перевірений</div>
+										<div class="product-card__block-tag">+1</div>
+									</div>
 								</div>
-								<table class="top-products__item-content">
-									<thead>
-										<tr>
-											<th>Madrid</th>
-											<th>Yesterday 07:30</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Echinocactus</td>
-											<td><sub>$</sub>42.99 <span>1 unit</span></td>
-										</tr>
-									</tbody>
-								</table>
-								<a href="#" class="top-products__item-bottom">Buy now</a>
 							</div>
 							<div class="top-products__item">
-								<div class="top-products__item-wrap-image">
-									<a href="#">
-										<img loading="lazy" src="images/top-products-image-5.jpg" alt="">
-										<div class="swiper-lazy-preloader"></div>
-									</a>
-									<button type="button" class="top-products__favorites-btn">
-										<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
-										</svg>
-									</button>
+								<div class="product-card__block">
+									<div class="product-card__block-author">
+										<div class="product-card__block-author-blockPhoto">
+											<img src="images/product-card-block-author-photo.png" alt="Віктор Семенович">
+										</div>
+										<div class="product-card__block-author-info">
+											<h3 class="product-card__block-author-name">Віктор Семенович</h3>
+											<p class="product-card__block-author-position">Сантехнік, Електрик</p>
+										</div>
+										<button type="button" class="product-card__block-icon-favorites "><!-- added-to-favorites -->
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.6348 0.423828C13.7665 0.423828 14.6949 0.793662 15.4482 1.5293C16.2006 2.26401 16.5762 3.16838 16.5762 4.27148C16.5762 4.84294 16.4714 5.41269 16.2568 5.98242H16.2559C16.0442 6.54486 15.6631 7.1948 15.0947 7.93359C14.5272 8.67138 13.7555 9.52435 12.7744 10.4932C11.7925 11.4628 10.5422 12.6222 9.02246 13.9727L8.5 14.4346L7.97754 13.9727C6.46002 12.6224 5.21051 11.4628 4.22754 10.4932C3.24557 9.52436 2.47278 8.67131 1.90527 7.93359C1.33692 7.1948 0.95581 6.54486 0.744141 5.98242H0.743164C0.528644 5.41269 0.423828 4.84294 0.423828 4.27148C0.423842 3.16838 0.799434 2.26401 1.55176 1.5293C2.30506 0.793662 3.23352 0.423828 4.36523 0.423828C5.10929 0.423905 5.79887 0.60208 6.44141 0.958984C7.08562 1.31672 7.65835 1.83837 8.15527 2.53711L8.49121 3.01074L8.83887 2.5459C9.3833 1.81921 9.97303 1.2905 10.6035 0.943359C11.2336 0.596695 11.9085 0.423905 12.6348 0.423828Z" stroke="#12144A" stroke-width="0.846841"/>
+											</svg>
+										</button>
+									</div>
+									<div class="product-card__block-raiting-and-price">
+										<div class="product-card__block-raiting">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-no-active.svg" alt="star">
+										</div>
+										<p class="product-card__block-price">1 040 ₴</p>
+									</div>
+									<div class="product-card__block-tags">
+										<div class="product-card__block-tag">ТОП</div>
+										<div class="product-card__block-tag">2.9 км</div>
+										<div class="product-card__block-tag">Перевірений</div>
+										<div class="product-card__block-tag">+1</div>
+									</div>
 								</div>
-								<table class="top-products__item-content">
-									<thead>
-										<tr>
-											<th>Madrid</th>
-											<th>Yesterday 07:30</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Shifeng 244 (4x4) 24 hp, tractor</td>
-											<td><sub>$</sub>128 400.00 <span>1 unit</span></td>
-										</tr>
-									</tbody>
-								</table>
-								<a href="#" class="top-products__item-bottom">Buy now</a>
 							</div>
 							<div class="top-products__item">
-								<div class="top-products__item-wrap-image">
-									<a href="#">
-										<img loading="lazy" src="images/top-products-image-6.jpg" alt="">
-										<div class="swiper-lazy-preloader"></div>
-									</a>
-									<button type="button" class="top-products__favorites-btn">
-										<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M2.80903 12.6734L2.80902 12.6733C1.97281 11.5534 1.41041 10.5672 1.09792 9.71167L1.09788 9.71155C0.781221 8.84516 0.625 7.9782 0.625 7.10778C0.625 5.42617 1.1818 4.04953 2.29001 2.93446C3.39866 1.81895 4.7608 1.26074 6.41875 1.26074C7.50943 1.26074 8.52134 1.52963 9.46519 2.06985L9.46528 2.0699C10.4118 2.61142 11.2534 3.40296 11.9856 4.46377L12.4867 5.18977L13.0055 4.47631C13.8075 3.37339 14.6752 2.57179 15.6016 2.04631C16.5271 1.52171 17.5169 1.26074 18.5812 1.26074C20.2392 1.26074 21.6013 1.81895 22.71 2.93446C23.8182 4.04953 24.375 5.42617 24.375 7.10778C24.375 7.9782 24.2188 8.84516 23.9021 9.71155L23.9021 9.71167C23.5896 10.5672 23.0272 11.5534 22.191 12.6733L22.191 12.6734C21.3558 13.7919 20.2203 15.0844 18.7773 16.5525C17.3331 18.0218 15.4945 19.7792 13.2593 21.8256C13.2592 21.8258 13.259 21.8259 13.2589 21.826L12.5 22.5175L11.7414 21.8263C11.7413 21.8262 11.7412 21.826 11.741 21.8259C9.5086 19.7794 7.67046 18.0219 6.22449 16.5523C4.78024 15.0842 3.64411 13.7918 2.80903 12.6734Z" stroke="black" stroke-width="1.25"/>
-										</svg>
-									</button>
+								<div class="product-card__block">
+									<div class="product-card__block-author">
+										<div class="product-card__block-author-blockPhoto">
+											<img src="images/product-card-block-author-photo.png" alt="Віктор Семенович">
+										</div>
+										<div class="product-card__block-author-info">
+											<h3 class="product-card__block-author-name">Віктор Семенович</h3>
+											<p class="product-card__block-author-position">Сантехнік, Електрик</p>
+										</div>
+										<button type="button" class="product-card__block-icon-favorites "><!-- added-to-favorites -->
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.6348 0.423828C13.7665 0.423828 14.6949 0.793662 15.4482 1.5293C16.2006 2.26401 16.5762 3.16838 16.5762 4.27148C16.5762 4.84294 16.4714 5.41269 16.2568 5.98242H16.2559C16.0442 6.54486 15.6631 7.1948 15.0947 7.93359C14.5272 8.67138 13.7555 9.52435 12.7744 10.4932C11.7925 11.4628 10.5422 12.6222 9.02246 13.9727L8.5 14.4346L7.97754 13.9727C6.46002 12.6224 5.21051 11.4628 4.22754 10.4932C3.24557 9.52436 2.47278 8.67131 1.90527 7.93359C1.33692 7.1948 0.95581 6.54486 0.744141 5.98242H0.743164C0.528644 5.41269 0.423828 4.84294 0.423828 4.27148C0.423842 3.16838 0.799434 2.26401 1.55176 1.5293C2.30506 0.793662 3.23352 0.423828 4.36523 0.423828C5.10929 0.423905 5.79887 0.60208 6.44141 0.958984C7.08562 1.31672 7.65835 1.83837 8.15527 2.53711L8.49121 3.01074L8.83887 2.5459C9.3833 1.81921 9.97303 1.2905 10.6035 0.943359C11.2336 0.596695 11.9085 0.423905 12.6348 0.423828Z" stroke="#12144A" stroke-width="0.846841"/>
+											</svg>
+										</button>
+									</div>
+									<div class="product-card__block-raiting-and-price">
+										<div class="product-card__block-raiting">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-no-active.svg" alt="star">
+										</div>
+										<p class="product-card__block-price">1 050 ₴</p>
+									</div>
+									<div class="product-card__block-tags">
+										<div class="product-card__block-tag">ТОП</div>
+										<div class="product-card__block-tag">2.9 км</div>
+										<div class="product-card__block-tag">Перевірений</div>
+										<div class="product-card__block-tag">+1</div>
+									</div>
 								</div>
-								<table class="top-products__item-content">
-									<thead>
-										<tr>
-											<th>Madrid</th>
-											<th>Yesterday 07:30</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Royal papaya</td>
-											<td><sub>$</sub>130.99 <span>1 kg</span></td>
-										</tr>
-									</tbody>
-								</table>
-								<a href="#" class="top-products__item-bottom">Buy now</a>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card__block">
+									<div class="product-card__block-author">
+										<div class="product-card__block-author-blockPhoto">
+											<img src="images/product-card-block-author-photo.png" alt="Віктор Семенович">
+										</div>
+										<div class="product-card__block-author-info">
+											<h3 class="product-card__block-author-name">Віктор Семенович</h3>
+											<p class="product-card__block-author-position">Сантехнік, Електрик</p>
+										</div>
+										<button type="button" class="product-card__block-icon-favorites "><!-- added-to-favorites -->
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.6348 0.423828C13.7665 0.423828 14.6949 0.793662 15.4482 1.5293C16.2006 2.26401 16.5762 3.16838 16.5762 4.27148C16.5762 4.84294 16.4714 5.41269 16.2568 5.98242H16.2559C16.0442 6.54486 15.6631 7.1948 15.0947 7.93359C14.5272 8.67138 13.7555 9.52435 12.7744 10.4932C11.7925 11.4628 10.5422 12.6222 9.02246 13.9727L8.5 14.4346L7.97754 13.9727C6.46002 12.6224 5.21051 11.4628 4.22754 10.4932C3.24557 9.52436 2.47278 8.67131 1.90527 7.93359C1.33692 7.1948 0.95581 6.54486 0.744141 5.98242H0.743164C0.528644 5.41269 0.423828 4.84294 0.423828 4.27148C0.423842 3.16838 0.799434 2.26401 1.55176 1.5293C2.30506 0.793662 3.23352 0.423828 4.36523 0.423828C5.10929 0.423905 5.79887 0.60208 6.44141 0.958984C7.08562 1.31672 7.65835 1.83837 8.15527 2.53711L8.49121 3.01074L8.83887 2.5459C9.3833 1.81921 9.97303 1.2905 10.6035 0.943359C11.2336 0.596695 11.9085 0.423905 12.6348 0.423828Z" stroke="#12144A" stroke-width="0.846841"/>
+											</svg>
+										</button>
+									</div>
+									<div class="product-card__block-raiting-and-price">
+										<div class="product-card__block-raiting">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-no-active.svg" alt="star">
+										</div>
+										<p class="product-card__block-price">1 060 ₴</p>
+									</div>
+									<div class="product-card__block-tags">
+										<div class="product-card__block-tag">ТОП</div>
+										<div class="product-card__block-tag">2.9 км</div>
+										<div class="product-card__block-tag">Перевірений</div>
+										<div class="product-card__block-tag">+1</div>
+									</div>
+								</div>
+							</div>
+							<div class="top-products__item">
+								<div class="product-card__block">
+									<div class="product-card__block-author">
+										<div class="product-card__block-author-blockPhoto">
+											<img src="images/product-card-block-author-photo.png" alt="Віктор Семенович">
+										</div>
+										<div class="product-card__block-author-info">
+											<h3 class="product-card__block-author-name">Віктор Семенович</h3>
+											<p class="product-card__block-author-position">Сантехнік, Електрик</p>
+										</div>
+										<button type="button" class="product-card__block-icon-favorites "><!-- added-to-favorites -->
+											<svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M12.6348 0.423828C13.7665 0.423828 14.6949 0.793662 15.4482 1.5293C16.2006 2.26401 16.5762 3.16838 16.5762 4.27148C16.5762 4.84294 16.4714 5.41269 16.2568 5.98242H16.2559C16.0442 6.54486 15.6631 7.1948 15.0947 7.93359C14.5272 8.67138 13.7555 9.52435 12.7744 10.4932C11.7925 11.4628 10.5422 12.6222 9.02246 13.9727L8.5 14.4346L7.97754 13.9727C6.46002 12.6224 5.21051 11.4628 4.22754 10.4932C3.24557 9.52436 2.47278 8.67131 1.90527 7.93359C1.33692 7.1948 0.95581 6.54486 0.744141 5.98242H0.743164C0.528644 5.41269 0.423828 4.84294 0.423828 4.27148C0.423842 3.16838 0.799434 2.26401 1.55176 1.5293C2.30506 0.793662 3.23352 0.423828 4.36523 0.423828C5.10929 0.423905 5.79887 0.60208 6.44141 0.958984C7.08562 1.31672 7.65835 1.83837 8.15527 2.53711L8.49121 3.01074L8.83887 2.5459C9.3833 1.81921 9.97303 1.2905 10.6035 0.943359C11.2336 0.596695 11.9085 0.423905 12.6348 0.423828Z" stroke="#12144A" stroke-width="0.846841"/>
+											</svg>
+										</button>
+									</div>
+									<div class="product-card__block-raiting-and-price">
+										<div class="product-card__block-raiting">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-active.svg" alt="star">
+											<img src="images/svg/product-star-no-active.svg" alt="star">
+										</div>
+										<p class="product-card__block-price">1 070 ₴</p>
+									</div>
+									<div class="product-card__block-tags">
+										<div class="product-card__block-tag">ТОП</div>
+										<div class="product-card__block-tag">2.9 км</div>
+										<div class="product-card__block-tag">Перевірений</div>
+										<div class="product-card__block-tag">+1</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div id="top-products-slider-pagination" class="slider-pagination swiper-pagination"></div>
+						<div id="top-products-slider-pagination" class="custom-slider-pagination swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
@@ -715,7 +819,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="how-agro-took-works-slider-pagination" class="slider-pagination swiper-pagination"></div>
+						<div id="how-agro-took-works-slider-pagination" class="custom-slider-pagination slider-pagination swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
@@ -819,7 +923,7 @@
 								</div>
 						  	</div>
 						</div>
-						<div id="what-think-agro-took-pagination" class="slider-pagination swiper-pagination"></div>
+						<div id="what-think-agro-took-pagination" class="custom-slider-pagination slider-pagination swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
@@ -863,7 +967,35 @@
 									<img loading="lazy" src="images/news-image-1.jpg" alt="State program to support farmers: how to get a subsidy in 2024">
 								</a>
 								<div class="news__item-content">
-									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2024</h3>
+									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2021</h3>
+									<a href="#" class="permalink">
+										<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.79192 20.1859C5.41173 20.6278 5.46178 21.2943 5.90372 21.6745C6.34566 22.0547 7.01212 22.0046 7.39231 21.5627L6.59211 20.8743L5.79192 20.1859ZM19.0487 6.39453L18.2485 5.70614L5.79192 20.1859L6.59211 20.8743L7.39231 21.5627L19.8489 7.08292L19.0487 6.39453Z" fill="#FEFFFE"/>
+											<path d="M7.47353 6.51588L19.5949 5.60545L20.5053 17.7268" stroke="#FEFFFE" stroke-width="2.11111" stroke-linecap="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="news__item">
+								<a href="#" class="news__item-blockImage">
+									<img loading="lazy" src="images/news-image-1.jpg" alt="State program to support farmers: how to get a subsidy in 2024">
+								</a>
+								<div class="news__item-content">
+									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2022</h3>
+									<a href="#" class="permalink">
+										<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M5.79192 20.1859C5.41173 20.6278 5.46178 21.2943 5.90372 21.6745C6.34566 22.0547 7.01212 22.0046 7.39231 21.5627L6.59211 20.8743L5.79192 20.1859ZM19.0487 6.39453L18.2485 5.70614L5.79192 20.1859L6.59211 20.8743L7.39231 21.5627L19.8489 7.08292L19.0487 6.39453Z" fill="#FEFFFE"/>
+											<path d="M7.47353 6.51588L19.5949 5.60545L20.5053 17.7268" stroke="#FEFFFE" stroke-width="2.11111" stroke-linecap="round"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+							<div class="news__item">
+								<a href="#" class="news__item-blockImage">
+									<img loading="lazy" src="images/news-image-1.jpg" alt="State program to support farmers: how to get a subsidy in 2024">
+								</a>
+								<div class="news__item-content">
+									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2023</h3>
 									<a href="#" class="permalink">
 										<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5.79192 20.1859C5.41173 20.6278 5.46178 21.2943 5.90372 21.6745C6.34566 22.0547 7.01212 22.0046 7.39231 21.5627L6.59211 20.8743L5.79192 20.1859ZM19.0487 6.39453L18.2485 5.70614L5.79192 20.1859L6.59211 20.8743L7.39231 21.5627L19.8489 7.08292L19.0487 6.39453Z" fill="#FEFFFE"/>
@@ -891,7 +1023,7 @@
 									<img loading="lazy" src="images/news-image-1.jpg" alt="State program to support farmers: how to get a subsidy in 2024">
 								</a>
 								<div class="news__item-content">
-									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2024</h3>
+									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2025</h3>
 									<a href="#" class="permalink">
 										<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5.79192 20.1859C5.41173 20.6278 5.46178 21.2943 5.90372 21.6745C6.34566 22.0547 7.01212 22.0046 7.39231 21.5627L6.59211 20.8743L5.79192 20.1859ZM19.0487 6.39453L18.2485 5.70614L5.79192 20.1859L6.59211 20.8743L7.39231 21.5627L19.8489 7.08292L19.0487 6.39453Z" fill="#FEFFFE"/>
@@ -905,35 +1037,7 @@
 									<img loading="lazy" src="images/news-image-1.jpg" alt="State program to support farmers: how to get a subsidy in 2024">
 								</a>
 								<div class="news__item-content">
-									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2024</h3>
-									<a href="#" class="permalink">
-										<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M5.79192 20.1859C5.41173 20.6278 5.46178 21.2943 5.90372 21.6745C6.34566 22.0547 7.01212 22.0046 7.39231 21.5627L6.59211 20.8743L5.79192 20.1859ZM19.0487 6.39453L18.2485 5.70614L5.79192 20.1859L6.59211 20.8743L7.39231 21.5627L19.8489 7.08292L19.0487 6.39453Z" fill="#FEFFFE"/>
-											<path d="M7.47353 6.51588L19.5949 5.60545L20.5053 17.7268" stroke="#FEFFFE" stroke-width="2.11111" stroke-linecap="round"/>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="news__item">
-								<a href="#" class="news__item-blockImage">
-									<img loading="lazy" src="images/news-image-1.jpg" alt="State program to support farmers: how to get a subsidy in 2024">
-								</a>
-								<div class="news__item-content">
-									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2024</h3>
-									<a href="#" class="permalink">
-										<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M5.79192 20.1859C5.41173 20.6278 5.46178 21.2943 5.90372 21.6745C6.34566 22.0547 7.01212 22.0046 7.39231 21.5627L6.59211 20.8743L5.79192 20.1859ZM19.0487 6.39453L18.2485 5.70614L5.79192 20.1859L6.59211 20.8743L7.39231 21.5627L19.8489 7.08292L19.0487 6.39453Z" fill="#FEFFFE"/>
-											<path d="M7.47353 6.51588L19.5949 5.60545L20.5053 17.7268" stroke="#FEFFFE" stroke-width="2.11111" stroke-linecap="round"/>
-										</svg>
-									</a>
-								</div>
-							</div>
-							<div class="news__item">
-								<a href="#" class="news__item-blockImage">
-									<img loading="lazy" src="images/news-image-1.jpg" alt="State program to support farmers: how to get a subsidy in 2024">
-								</a>
-								<div class="news__item-content">
-									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2024</h3>
+									<h3 class="news__item-title">State program to support farmers: how to get a subsidy in 2026</h3>
 									<a href="#" class="permalink">
 										<svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
 											<path d="M5.79192 20.1859C5.41173 20.6278 5.46178 21.2943 5.90372 21.6745C6.34566 22.0547 7.01212 22.0046 7.39231 21.5627L6.59211 20.8743L5.79192 20.1859ZM19.0487 6.39453L18.2485 5.70614L5.79192 20.1859L6.59211 20.8743L7.39231 21.5627L19.8489 7.08292L19.0487 6.39453Z" fill="#FEFFFE"/>
@@ -943,7 +1047,7 @@
 								</div>
 							</div>
 						</div>
-						<div id="news-slider-pagination" class="slider-pagination swiper-pagination"></div>
+						<div id="news-slider-pagination" class="custom-slider-pagination slider-pagination swiper-pagination"></div>
 					</div>
 				</div>
 			</div>
@@ -992,7 +1096,7 @@
                         <img src="images/svg/footer-app-store-new.svg" alt="">
                     </a>
                 </div>
-                <p class="footer-copyright">2025 My Gin. All right reserved.</p>
+                <p class="footer-copyright">2026 My Gin. Всі права захищені.</p>
             </div>
             <div data-da="footer-first-column, 1, 720" class="footer__column">
                 <div class="footer__columnBlock">
@@ -1026,10 +1130,10 @@
 </footer>
 	</div>
 	
-   <script src="js/script.min.js?_v=20260421020502"></script>
+   <script src="js/script.min.js?_v=20260421151312"></script>
 
-	<script src="files/swiper/js/swiper-bundle.min.js?_v=20260421020502"></script>
-   <script src="files/swiper/js/init.js?_v=20260421020502"></script>
+	<script src="files/swiper/js/swiper-bundle.min.js?_v=20260421151312"></script>
+   <script src="files/swiper/js/init.js?_v=20260421151312"></script>
 	
 </body>
 </html>
