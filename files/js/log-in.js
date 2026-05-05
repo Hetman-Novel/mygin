@@ -89,11 +89,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
    // Starting the timer
    const timerElement = document.querySelector('.log-in-form-timer');
-   const blockInfo = document.querySelector('.log-in-form__block-info');
+   const blockInfo = document.querySelector('.log-in-form__block-info a');
    const wrapSubmitTwoButton = document.querySelector('.log-in-form__wrap-submit.two-button');
    let timerInterval; // Variable for storing the timer
    function startTimer() { // Timer start function
-      let timeLeft = 59; // Countdown from 59 seconds
+      let timeLeft = 70; // Countdown from 59 seconds
       const updateTimerDisplay = () => {
          const minutes = String(Math.floor(timeLeft / 60)).padStart(2, '0');
          const seconds = String(timeLeft % 60).padStart(2, '0');
@@ -106,12 +106,12 @@ document.addEventListener("DOMContentLoaded", function () {
          updateTimerDisplay();
          if (timeLeft <= 0) {
             clearInterval(timerInterval); // Stop the timer
-            const parentBlock = timerElement.parentElement.parentElement.parentElement;
-            parentBlock.classList.add('hidden'); // Add the hidden class to the parent block
+            //const parentBlock = timerElement;
+            //parentBlock.classList.add('hidden'); // Add the hidden class to the parent block
             setTimeout(() => { // After 10 seconds we change classes
-               parentBlock.classList.remove('hidden'); // Remove the hidden class
-               parentBlock.classList.add('not-receive'); // Add the not-receive class
-            }, 10000); // 10 seconds
+               //parentBlock.classList.remove('hidden'); // Remove the hidden class
+               blockInfo.classList.add('not-receive'); // Add the not-receive class
+            }, 0); // 10000 - 10 seconds
          }
       }, 1000);
    }
@@ -119,11 +119,13 @@ document.addEventListener("DOMContentLoaded", function () {
       loginButton.addEventListener('click', () => {
          if (loginButton.classList.contains('disabled')) return; // If the button is disabled, do nothing
          startTimer(); // Start the timer
-         wrapSubmitTwoButton.classList.add('hidden');
+         document.querySelector('.log-in__wrap-form').classList.add('enter-code');
+         /*wrapSubmitTwoButton.classList.add('hidden');*/
       });
    }
    if (blockInfo) { // Click handler for log-in-form__block-info with class not-receive
-      blockInfo.addEventListener('click', () => {
+      blockInfo.addEventListener('click', (e) => {
+         e.preventDefault();
          if (blockInfo.classList.contains('not-receive')) {
             blockInfo.classList.remove('not-receive'); // Remove the not-receive class
             startTimer(); // Restart the timer
@@ -199,4 +201,16 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelector('.log-in-form__wrap-submit.one-button-submit').classList.add('show');
    });
 
+   // Selected by phone
+   const selectedByPhone = document.getElementById('selected-by-phone');
+   const logInFormBlock = document.querySelector('.log-in-form__block');
+   if (selectedByPhone) {
+      selectedByPhone.addEventListener('click', (e) => {
+         e.preventDefault();
+         selectedByPhone.parentNode.parentNode.parentNode.classList.add('selected-by-phone');
+         if (logInFormBlock) {
+            logInFormBlock.classList.add('block-active');
+         }
+      });
+   }
 });
