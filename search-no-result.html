@@ -15,7 +15,7 @@
    <link rel="stylesheet" href="files/select2/css/select2.min.css?_v=20260505165333">
    <link rel="stylesheet" href="files/select2/css/select2-custom.css?_v=20260505165333">
    <link rel="stylesheet" href="files/custom-select/style.css?_v=20260505165333">
-   <title>Мобільний додаток - My Gin</title>
+   <title>Пошук - My Gin</title>
 </head>
 
 <body>
@@ -316,256 +316,143 @@
 				</div>
 			</div>
 		</header>
-		<main class="main mobile-application">
+		<main class="main search">
          <div class="n_container">
-				<div class="page__head">
-					<h1>Мобільний додаток</h1>
+				<div class="page__head there-is-a-button">
+					<h1>Поиск</h1>
+               <button id="show-sidebar" type="button" class="favorite__btn-show-filter">
+                  <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                     <path d="m487.976 0h-463.948c-21.318 0-32.075 25.866-16.97 40.971l184.942 184.97v206.059c0 7.831 3.821 15.17 10.237 19.662l80 55.98c15.783 11.048 37.763-.149 37.763-19.662v-262.039l184.947-184.97c15.074-15.075 4.391-40.971-16.971-40.971z"/>
+                  </svg>
+               </button>
 				</div>
 
-            <div class="platform-for-craftsmen__items">
-               <div class="platform-for-craftsmen__item">
-                  <div class="platform-for-craftsmen__blockImage">
-                     <img src="images/platform-for-craftsmen-img-1.jpg" alt="">
-                  </div>
-                  <div class="platform-for-craftsmen__blockInfo">
-                     <h3 class="platform-for-craftsmen__title">Знаходьте виконавців поблизу</h3>
-                     <p class="platform-for-craftsmen__desc">My Gin допоможе замовникам і фахівцям швидко знайти один одного в найближчому радіусі.</p>
-                  </div>
+				<div class="favorite__items">
+					<div class="favorite__item">
+                  <aside id="sidebar-sort-by" class="sidebar-filters">
+                     <h2 class="sidebar-filters__title">Пошук</h2>
+                     <form>
+                        <div class="block-sort-by">
+                           <div data-spollers class="block">
+                              <div class="block__item">
+                                 <button tabindex="-1" type="button" data-spoller class="block__title _active first-level-title">Фільтри</button>
+                                 <div class="block__text">
+												
+												<div data-spollers class="block sub-block">
+                              			<div class="block__item">
+														<button tabindex="-1" type="button" data-spoller class="block__title _active sub-title">Категорія</button>
+														<div class="block__text">
+															<div class="block__content">
+																<ul class="sidebar-filters-sorting-list">
+																	<li><label><input type="radio" name="by-category" value="Електрик" checked> Електрик</label></li>
+																	<li><label><input type="radio" name="by-category" value="Адвокат"> Адвокат</label></li>
+																	<li><label><input type="radio" name="by-category" value="Юрист"> Юрист</label></li>
+																	<li><label><input type="radio" name="by-category" value="Репетитор"> Репетитор</label></label></li>
+																	<li><label><input type="radio" name="by-category" value="Дизайнер"> Дизайнер</label></label></li>
+																	<li><label><input type="radio" name="by-category" value="Вигул тварин"> Вигул тварин</label></label></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+                              		</div>
+												
+												<div data-spollers class="block sub-block">
+                              			<div class="block__item">
+														<button tabindex="-1" type="button" data-spoller class="block__title _active sub-title">Радіус</button>
+														<div class="block__text">
+															<div class="block__content">
+																<ul class="sidebar-filters-sorting-list">
+																	<li><label><input type="radio" name="by-radius" value="До 20 км" checked> До 20 км</label></li>
+																	<li><label><input type="radio" name="by-radius" value="До 30 км"> До 30 км</label></li>
+																	<li><label><input type="radio" name="by-radius" value="До 100 км"> До 100 км</label></li>
+																	<li><label><input type="radio" name="by-radius" value="До 10 000 км"> До 10 000 км</label></label></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+                              		</div>
+                                    
+												<button type="button" class="block-sort-by__apply">Застосувати</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="block-sort-by">
+                           <div data-spollers class="block">
+                              <div class="block__item">
+                                 <button tabindex="-1" type="button" data-spoller class="block__title first-level-title _active">Сортувати</button>
+                                 <div class="block__text">
+                                    <div class="block__text-content">
+                                       <div data-spollers class="block">
+                                          <div class="block__item">
+															<ul class="sidebar-filters-sorting-list">
+																<li><label><input type="radio" name="by-direction" value="Спочатку дорожчі" checked> Спочатку дорожчі</label></li>
+																<li><label><input type="radio" name="by-direction" value="Спочатку дешевші"> Спочатку дешевші</label></li>
+																<li><label><input type="radio" name="by-direction" value="Спочатку найновіші"> Спочатку найновіші</label></li>
+																<li><label><input type="radio" name="by-direction" value="Спочатку найдавніші"> Спочатку найдавніші</label></label></li>
+															</ul>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </form>
+                  </aside>
                </div>
-               <div class="platform-for-craftsmen__item">
-                  <div class="platform-for-craftsmen__blockImage">
-                     <img src="images/platform-for-craftsmen-img-3.jpg" alt="">
-                  </div>
-                  <div class="platform-for-craftsmen__blockInfo">
-                     <h3 class="platform-for-craftsmen__title">Заробляйте більше з My Gin</h3>
-                     <p class="platform-for-craftsmen__desc">Знаходьте більше замовлень і збільшуйтесвій дохід.</p>
-                  </div>
-               </div>
-               <div class="platform-for-craftsmen__item">
-                  <div class="platform-for-craftsmen__blockImage">
-                     <img src="images/platform-for-craftsmen-img-2.jpg" alt="">
-                  </div>
-                  <div class="platform-for-craftsmen__blockInfo">
-                     <h3 class="platform-for-craftsmen__title">Надсилайте свій контакт</h3>
-                     <p class="platform-for-craftsmen__desc">Обмінюйтеся контактами через QR-код, щоб не втратити важливий контакт.</p>
-                  </div>
-               </div>
-               <div class="platform-for-craftsmen__item">
-                  <div class="platform-for-craftsmen__blockImage">
-                     <img src="images/platform-for-craftsmen-img-4.jpg" alt="">
-                  </div>
-                  <div class="platform-for-craftsmen__blockInfo">
-                     <h3 class="platform-for-craftsmen__title">Чат для спілкування</h3>
-                     <p class="platform-for-craftsmen__desc">Спілкуйтеся з виконавцями в зручному чаті не виходячи з дому в будь-який час!</p>
-                  </div>
-               </div>
-            </div>
+					<div class="favorite__item">
+                  <div class="fs__wrap-form search-page "><!--- show-block-with-result -->
+							<form action="#">
+								<input type="text" placeholder="Наприклад, полагодити кран">
+								<button type="submit">Пошук</button>
+							</form>
+						</div>
+						<div class="search__wrap-popular">
+							<p>Популярні запити:</p>
+							<ul>
+								<li>Електрик</li>
+								<li>Адвокат</li>
+								<li>Юрист</li>
+								<li>Репетитор</li>
+								<li>Дизайнер</li>
+								<li>Вигул тварин</li>
+							</ul>
+						</div>
 
-            <div class="use-functionality">
-               <h2 class="use-functionality__title">Користуватися функціоналом My Gin просто та зручно!</h2>
-               <p class="use-functionality__desc">За допомогою додатка My GIN швидко та зручно<br> знаходити потрібних фахівців поруч.</p>
-               <div class="use-functionality__wrap-items">
-                  <div class="use-functionality__items">
-                     <div class="use-functionality__item">
-                        <div class="use-functionality__itemBlock">
-                           <div class="use-functionality__itemBlockIcon">
-                              <img src="images/svg/use-functionality-icon-1.svg" alt="Вкладка «Пошук»">
-                           </div>
-                           <h3 class="use-functionality__itemTitle">Вкладка «Пошук»</h3>
-                           <p class="use-functionality__text">Тут ви зможете знайти майстра поблизу, який виконуватиме замовлення зі списку категорій.</p>
-                        </div>
-                     </div>
-                     <div class="use-functionality__item">
-                        <div class="use-functionality__itemBlock">
-                           <div class="use-functionality__itemBlockIcon">
-                              <img src="images/svg/use-functionality-icon-3.svg" alt="Вкладка «Моя візитка»">
-                           </div>
-                           <h3 class="use-functionality__itemTitle">Вкладка «Моя візитка»</h3>
-                           <p class="use-functionality__text">Обмінюйтеся контактами через QR код, щоб не втратити важливий контакт.</p>
-                        </div>
-                     </div>
-                     <div class="use-functionality__item">
-                        <div class="use-functionality__itemBlock">
-                           <div class="use-functionality__itemBlockIcon">
-                              <img src="images/svg/use-functionality-icon-2.svg" alt="Вкладка «Вибрані»">
-                           </div>
-                           <h3 class="use-functionality__itemTitle">Вкладка «Вибрані»</h3>
-                           <p class="use-functionality__text">У цій категорії ви бачите вподобаних вами фахівців під час пошуку або перевірених майстрів.</p>
-                        </div>
-                     </div>
-                     <div class="use-functionality__item">
-                        <div class="use-functionality__itemBlock">
-                           <div class="use-functionality__itemBlockIcon">
-                              <img src="images/svg/use-functionality-icon-4.svg" alt="Вкладка «Чат»">
-                           </div>
-                           <h3 class="use-functionality__itemTitle">Вкладка «Чат»</h3>
-                           <p class="use-functionality__text">Зручний чат для спілкування з Виконавцями, в якому можна прикріпити фото або відео.</p>
-                        </div>
-                     </div>
-                  </div>
-                  <img class="use-functionality__device" src="images/use-functionality-device.png" alt="device">
-               </div>
-            </div>
+						<div class="no-result">
+							<div class="no-result__blockIcon">
+								<img src="images/no-result-icon-new.png" alt="">
+							</div>
+							<h2>За вашим запитом нічого не знайдено</h2>
+						</div>
 
-            <div class="order-and-provide">
-               <h2 class="n_sec-title">Замовляйте, чи надавайте послуги</h2>
-               <div class="order-and-provide__items">
-                  <a href="#" class="order-and-provide__item">
-                     <div class="order-and-provide__blockImage">
-                        <img src="images/order-and-provide-block-img-1.png" alt="">
-                     </div>
-                     <div class="order-and-provide__blockInfo">
-                        <h3 class="order-and-provide__title">Знайдіть ідеального майстра</h3>
-                        <p class="order-and-provide__desc">Наш додаток забезпечить вас найкращими пропозиціями від досвідчених майстрів поблизу.</p>
-                        <div class="order-and-provide__permalink">
-                           <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M16.9717 14.5568L14.2748 14.5718V5.15545L2.44786 16.9824L0.489258 15.0238L12.3162 3.19685L2.90738 3.20438L2.91492 0.5L16.9717 0.500001V14.5568Z" fill="#22282B"/>
-                           </svg>
-                        </div>
-                     </div>
-                  </a>
-                  <a href="#" class="order-and-provide__item">
-                     <div class="order-and-provide__blockImage">
-                        <img src="images/order-and-provide-block-img-2.png" alt="">
-                     </div>
-                     <div class="order-and-provide__blockInfo">
-                        <h3 class="order-and-provide__title">Знайдіть ідеального майстра</h3>
-                        <p class="order-and-provide__desc">Наш додаток забезпечить вас найкращими пропозиціями від досвідчених майстрів поблизу.</p>
-                        <div class="order-and-provide__permalink">
-                           <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                              <path d="M16.9717 14.5568L14.2748 14.5718V5.15545L2.44786 16.9824L0.489258 15.0238L12.3162 3.19685L2.90738 3.20438L2.91492 0.5L16.9717 0.500001V14.5568Z" fill="#22282B"/>
-                           </svg>
-                        </div>
-                     </div>
-                  </a>
-               </div>
-            </div>
+						
 
-            <div class="what-think-agro-took">
-               <h2 class="n_sec-title">Відгуки користувачів</h2>
-               <div class="what-think-agro-took__blockText">
-                  <p>Прочитайте реальні відгуки від замовників і переконайтеся, що<br> MY GIN — найзручніший додаток для пошуку кваліфікованих твиконавців.</p>
-               </div>
-               <div class="what-think-agro-took-slider">
-                  <div class="swiper-wrapper">
-                     <div class="swiper-slide">
-                        <div class="what-think-agro-took-slider__block">
-                           <div class="slider-wrap-photo">
-                              <img src="images/what-think-agro-took-slider-photo-1.jpg" alt="">
-                           </div>
-                           <div class="slider-wrap-stars">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                           </div>
-                           <h3>Michael Thompson</h3>
-                           <div class="slider-wrap-text">
-                              <p>Posting my products on Agro Took was a breeze, and I've gained fantastic customers!</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="what-think-agro-took-slider__block">
-                           <div class="slider-wrap-photo">
-                              <img src="images/what-think-agro-took-slider-photo-2.jpg" alt="">
-                           </div>
-                           <div class="slider-wrap-stars">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                           </div>
-                           <h3>Sarah Lee</h3>
-                           <div class="slider-wrap-text">
-                              <p>Perfect place for connecting with trustworthy sellers. Saves me so much time!</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="what-think-agro-took-slider__block">
-                           <div class="slider-wrap-photo">
-                              <img src="images/what-think-agro-took-slider-photo-4.jpg" alt="">
-                           </div>
-                           <div class="slider-wrap-stars">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                           </div>
-                           <h3>Yan Yoko</h3>
-                           <div class="slider-wrap-text">
-                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis eius praesentium ex porro adipisci a. Exercitationem vel eligendi quod, repudiandae eveniet beatae! Et pariatur modi itaque accusamus officia consequuntur quis. Ad, maxime iure! Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque nobis eius praesentium ex porro adipisci a. Exercitationem vel eligendi quod, repudiandae eveniet beatae! Et pariatur modi itaque accusamus officia consequuntur quis. Ad, maxime iure!</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="what-think-agro-took-slider__block">
-                           <div class="slider-wrap-photo">
-                              <img src="images/what-think-agro-took-slider-photo-5.jpg" alt="">
-                           </div>
-                           <div class="slider-wrap-stars">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                           </div>
-                           <h3>Jessica Jones</h3>
-                           <div class="slider-wrap-text">
-                              <p>I love the variety here! Always find what I need quickly. Great platform!</p>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="swiper-slide">
-                        <div class="what-think-agro-took-slider__block">
-                           <div class="slider-wrap-photo">
-                              <img src="images/what-think-agro-took-slider-photo-3.jpg" alt="">
-                           </div>
-                           <div class="slider-wrap-stars">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                              <img src="images/svg/star.svg" alt="">
-                           </div>
-                           <h3>Laura Bennett</h3>
-                           <div class="slider-wrap-text">
-                              <p>I love the variety here! Always find what I need quickly. Great platform!</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div id="what-think-agro-took-pagination" class="custom-slider-pagination slider-pagination swiper-pagination"></div>
-               </div>
-            </div>
+						<!--<div class="page-blog__pagination">
+							<nav class="navigation pagination" aria-label="Записи">
+								<h2 class="screen-reader-text">Навігація за записами</h2>
+								<div class="nav-links">
+									<a class="prev page-numbers" href="https://site.example/news/page/2/">
+										<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M8.34089 1.78516L1.52271 8.60334L8.34089 15.4215" stroke="#4DA172" stroke-width="2.27273" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+									<span aria-current="page" class="page-numbers current">1</span>
+									<a class="page-numbers" href="https://site.example/news/page/2/">2</a>
+									<span class="page-numbers dots">…</span>
+									<a class="page-numbers" href="https://site.example/news/page/5/">5</a>
+									<a class="next page-numbers" href="https://site.example/news/page/3/">
+										<svg width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M1.65918 1.78516L8.47736 8.60334L1.65918 15.4215" stroke="#4DA172" stroke-width="2.27273" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</a>
+								</div>
+							</nav>
+						</div>-->
 
-            <div class="my-gin-assistan">
-               <div class="my-gin-assistan__block">
-                  <div class="my-gin-assistan__content">
-                     <h2 class="my-gin-assistan__title">MY GIN: надійний помічник для вирішення завдань</h2>
-                     <p class="my-gin-assistan__desc">MY GIN — ваша впевненість у правильному виборі майстра. Завантажте додаток MY GIN уже зараз.</p>
-                     <div class="my-gin-assistan__wrap-buttons">
-                        <div class="my-gin-assistan__wrap-button">
-                           <p>Завантажити додаток для Android</p>
-                           <a href="#" class="my-gin-assistan__button">
-                              <img src="images/svg/my-gin-assistan-google-play.svg" alt="Google play">
-                           </a>
-                        </div>
-                        <div class="my-gin-assistan__wrap-button">
-                           <p>Завантажити додаток для Android</p>
-                           <a href="#" class="my-gin-assistan__button">
-                              <img src="images/svg/my-gin-assistan-app-store.svg" alt="App store">
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-                  <img class="my-gin-assistan__devices" src="images/my-gin-assistan-devices.png" alt="">
                </div>
-            </div>
+				</div>
 
          </div>
       </main>
@@ -621,8 +508,51 @@
 	
    <script src="js/script.min.js?_v=20260505165333"></script>
 
-	<script src="files/swiper/js/swiper-bundle.min.js?_v=20260505165333"></script>
-   <script src="files/swiper/js/init.js?_v=20260505165333"></script>
+   <script src="files/js/jquery-3.6.1.min.js?_v=20260505165333"></script>
+
+   <script src="files/select2/js/select2.full.min.js?_v=20260505165333"></script>
+   <script src="files/select2/js/init.js?_v=20260505165333"></script>
+
+   <script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const searchWrap = document.querySelector('.fs__wrap-form.search-page');
+			const input = searchWrap.querySelector('input[type="text"]');
+			const resultBlock = searchWrap.querySelector('.search__block-with-result');
+
+			// При вводе — если хоть что-то введено, добавляем класс
+			input.addEventListener('input', function () {
+				if (input.value.trim().length > 0) {
+					searchWrap.classList.add('show-block-with-result');
+				}
+			});
+
+			// При фокусе или клике — всегда добавляем класс
+			input.addEventListener('focus', function () {
+				searchWrap.classList.add('show-block-with-result');
+			});
+
+			input.addEventListener('click', function () {
+				searchWrap.classList.add('show-block-with-result');
+			});
+
+			// При клике на ссылку — вставляем текст и отменяем переход
+			resultBlock.addEventListener('click', function (e) {
+				const target = e.target;
+				if (target.tagName.toLowerCase() === 'a') {
+					e.preventDefault(); // отменяем переход
+					input.value = target.textContent.trim();
+					searchWrap.classList.remove('show-block-with-result');
+				}
+			});
+
+			// При клике вне блока — убираем класс
+			document.addEventListener('click', function (e) {
+				if (!searchWrap.contains(e.target)) {
+					searchWrap.classList.remove('show-block-with-result');
+				}
+			});
+		});
+	</script>
 	
 </body>
 </html>
